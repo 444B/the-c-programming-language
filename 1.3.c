@@ -12,6 +12,8 @@ int main()
     step = 20;
 
     fahr = lower;
+    
+    printf("Fahrenheit to Celsuis Table");
     while (fahr <= upper)
     {
         celsius = 5 * (fahr - 32) / 9;
