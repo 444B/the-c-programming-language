@@ -1,5 +1,3 @@
-// variables and arithmetic expressions
-
 #include <stdio.h>
 
 int main()
