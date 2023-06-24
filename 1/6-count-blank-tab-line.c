@@ -1,12 +1,23 @@
 #include <stdio.h>
 
-main()
+main() /* count lines in input */
 {
-    int c, nl;
+    int c, blank, tab, newline;
 
-    nl = 0;
+    blank =0;
+    tab = 0;
+    newline = 0;
+    
     while ((c = getchar()) != EOF)
+    {
+        if (c == ' ')
+            ++blank;
+        if (c == '\t')
+            ++tab;
         if (c == '\n')
-            ++nl;
-    printf("%d\n, nl");
+            ++newline;
+    }
+    
+    printf("Blanks | Tabs | Newlines\n");
+    printf("  %d        %d       %d\n", blank, tab, newline);
 }

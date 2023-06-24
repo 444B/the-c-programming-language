@@ -1,20 +1,12 @@
 #include <stdio.h>
 
-int n;
-
-n = 0;
-
-test()
+main() /* count lines in input */
 {
+    int c, nl;
 
-    printf("Goodbye, world! %d\n", n);
-    ++n;
-}
-
-main()
-{
-    while (n<=10)
-    {
-        test();
-    }
+    nl = 0;
+    while ((c = getchar()) != EOF)
+        if (c == '\n')
+            ++nl;
+    printf("%d\n", nl);
 }
