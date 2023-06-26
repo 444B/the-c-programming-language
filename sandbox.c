@@ -1,3 +1,5 @@
+/**/
+
 #include <stdio.h>
 
 main() /* count lines in input */

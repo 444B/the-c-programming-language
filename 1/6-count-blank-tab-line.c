@@ -1,3 +1,5 @@
+/*Exercise 1-6. Write a program to count blanks, tabs, and newlines.*/
+
 #include <stdio.h>
 
 main() /* count lines in input */
