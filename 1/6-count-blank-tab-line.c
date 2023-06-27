@@ -6,9 +6,7 @@ main() /* count lines in input */
 {
     int c, blank, tab, newline;
 
-    blank =0;
-    tab = 0;
-    newline = 0;
+    blank = tab = newline = 0;
     
     while ((c = getchar()) != EOF)
     {
@@ -20,6 +18,8 @@ main() /* count lines in input */
             ++newline;
     }
     
-    printf("Blanks | Tabs | Newlines\n");
-    printf("  %d        %d       %d\n", blank, tab, newline);
+    /*printf("\nBlanks | Tabs | Newlines\n");
+    printf("  %d        %d       %d\n", blank, tab, newline);*/
+    
+    printf("\nBlanks: %d\nTabs: %d\nNewlines: %d\n", blank, tab, newline);
 }
